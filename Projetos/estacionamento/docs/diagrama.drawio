@@ -1,0 +1,101 @@
+<mxfile host="65bd71144e">
+    <diagram id="9VBKroJGMlykrme0yKj5" name="Página-1">
+        <mxGraphModel dx="666" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="175" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="INCIO" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#10FF00;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="120" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="INFORME A HORA&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFD8D6;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="150" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="690" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="LER HORA&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FF7C7C;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="350" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;" edge="1" parent="1" source="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="830" y="70" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="755" y="70"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1240" y="600" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="750" y="600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="SIM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="13">
+                    <mxGeometry x="0.2289" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="14">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1120" y="130" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="950" y="393"/>
+                            <mxPoint x="960" y="130"/>
+                            <mxPoint x="990" y="130"/>
+                            <mxPoint x="1120" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="NÃO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="25">
+                    <mxGeometry x="0.0186" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="É UMA VAGA OCUPADA&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF0043;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="320" width="130" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.638;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1300" y="500" as="targetPoint"/>
+                        <mxPoint x="980" y="70" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1300" y="70.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="vaga X = hora" style="whiteSpace=wrap;html=1;fillColor=#21FF81;" vertex="1" parent="1">
+                    <mxGeometry x="830" y="40" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="intervalo = vaga - hora" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFAFFF;" vertex="1" parent="1">
+                    <mxGeometry x="1060" y="180" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="intervalo = vaga - hora" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#02FFA2;" vertex="1" parent="1">
+                    <mxGeometry x="1060" y="330" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="FIM" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FF0D05;" vertex="1" parent="1">
+                    <mxGeometry x="1250" y="280" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;span data-teams=&quot;true&quot;&gt;Hora de saida não pode ser menor que de entrada&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="1230" y="560" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;entryX=0.663;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="26" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
