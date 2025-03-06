@@ -2,7 +2,7 @@ let elementosVagas = document.querySelectorAll(".vaga");
 let infoElementos = document.querySelectorAll(".resumo div");
 let vagas = [null, null, null, null, null, null, null, null, null, null];
 let totalHoras = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-let resultadoTexto = document.getElementById("resultado")
+let resultadoTexto = document.getElementById("resultado");
 let totalCarros = 0;
 
 elementosVagas.forEach((vaga, i) => {
@@ -12,10 +12,12 @@ elementosVagas.forEach((vaga, i) => {
 
 function gerenciarVaga(numeroDaVaga) {
     let hora = parseInt(prompt("Informe a hora (somente número inteiro):"));
+
     if(isNaN(hora) || hora < 0 || hora > 23) {
-        alert("hora inválida");
+        alert("Hora inválida");
         return;
     }
+
     if (vagas[numeroDaVaga] === null) {
         vagas[numeroDaVaga] = hora;
         elementosVagas[numeroDaVaga].classList.add("ocupado");
@@ -31,17 +33,21 @@ function gerenciarVaga(numeroDaVaga) {
     }
     atualizarInfo();
 }
+
 function atualizarInfo() {
     for(let i = 0; i < 10; i++) {
         infoElementos[i].innerText = `Vaga ${i + 1}: ${totalHoras[i]}h`
     }
-    }
+}
+
 function totalizar() {
     let totalHorasDia = 0;
+    
     for(let i = 0; i < 10; i++) {
-        totalHorasDia += totalHoras[i];
-     
+        totalHorasDia += totalHoras[i];        
     }
+
     let faturamento = totalHorasDia * 12;
     resultadoTexto.innerText = `Total de horas: ${totalHorasDia}, Carros Atendidos: ${totalCarros}, Faturamento: R$${faturamento},00`;
 }
+
