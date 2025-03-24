@@ -7,5 +7,32 @@ let pessoas = [
     { nome: "Pedro", nascimento: "1993-12-05", tipoSanguineo: "A+", cpf: "67890123455", telefone: "944444444" }
 ];
 
-// BUSCA BINÁRIA POR JOÃO, PARA ISSO A LISTA PRECISA ESTAR ORDENADA POR CPF     
+function buscaBinaria(lista, nome) {
+    let inicio = 0
+    let fim = lista.length - 1;
 
+    while (inicio <= fim) {
+        let meio = Math.floor((inicio + fim) / 2);
+        let nomeMeio = lista[meio].nome;
+
+        if (nomeMeio === nome) {
+            return lista[meio];
+        } else if (nomeMeio < nome) {
+            inicio = meio + 1;
+        } else {
+            fim = meio - 1;
+        }
+    }
+    
+    return -1;
+}
+
+// Ordem Original
+// console.log(pessoas);
+
+pessoas.sort((a, b) => a.telefone.localeCompare(b.telefone)); // ordenção
+
+// Ordenado por Telefone
+// console.log(pessoas)
+
+console.log(buscaBinaria(pessoas, "Pedro"));
