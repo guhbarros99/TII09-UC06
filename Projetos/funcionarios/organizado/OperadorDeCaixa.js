@@ -1,6 +1,6 @@
-import { Funcionario } from './Funcionario';
+import { Funcionario } from './Funcionario.js';
 
-class OperadorDeCaixa extends Funcionario {
+export class OperadorDeCaixa extends Funcionario {
 
     receberSalario(valor) {
         // TODO: Modificação futura

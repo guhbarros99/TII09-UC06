@@ -62,13 +62,13 @@ class OperadorDeCaixa extends Funcionario {
 }
 
 class Estagiario extends Funcionario {
-    receberSalario(valor){
-        return `${this.getNome()} recebeu bolsa estacio no valor de R$${valor}}`
+    receberSalario(valor) {
+        return `${this.getNome()} recebu bolsa estágio no valor de R$${valor}}`
+    }
 
-    }   
-    registrarAtividade(destricao){
-        return `${this.getNome()} realizou a atividade: ${descricao}`;
-    } 
+    registrarAtividade(descricao) {
+        return  `${this.getNome()} realizou a atividade: ${descricao}`;
+    }
 }
 
 const gerente = new Gerente("Ana", "G001", 2015, "Rua do Salto, nº 100");
@@ -89,5 +89,3 @@ console.log(estagiario.tempoDeEmpresa(2025));
 console.log(estagiario.receberSalario(2000));
 console.log(estagiario.registrarAtividade("Preparou o cafezinho. Delícia!"));
 console.log(estagiario.registrarAtividade("Limpou os tonners da impressora."));
-
-
