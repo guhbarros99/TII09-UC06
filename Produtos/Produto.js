@@ -28,7 +28,6 @@ export class Produto {
     }
 
     estaProximoDaValidade() {
-        const hj = '2025-04-14';
         const hoje = new Date();
         const diff = (this.#validade - hoje) / (1000 * 60 * 60 * 24);
         return diff < 10;
@@ -47,7 +46,7 @@ export class Produto {
     }
 
     static fromJSON(json) {
-        const produto = new Produto(json.nome, json.preco, json.validade);
+        const produto = new Produto(json.nome, json.preco, json.peso, json.validade);
         produto.#id = json.id;
         return produto;
     }
