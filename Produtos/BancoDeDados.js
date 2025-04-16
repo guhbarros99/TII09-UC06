@@ -30,17 +30,25 @@ export class BancoDeDados {
         return produtos.sort((a, b) => a.id - b.id);
     }
 
-    buscarPorId(id) {
-
+    static buscarPorId(id) {
+        const produtoJson = localStorage.getItem(id);
+        const dados = JSON.parse(produtoJson);
+        return Produto.fromJSON(dados);
     }
 
     // UPDATE
-    atualizar(produtoAtualizado) {
-
+    static atualizar(produtoAtualizado) {
+        localStorage.setItem(produtoAtualizado.id, JSON.stringify({
+            id: produtoAtualizado.id,
+            nome: produtoAtualizado.nome,
+            preco: produtoAtualizado.preco,
+            peso: produtoAtualizado.peso,
+            validade: produtoAtualizado.validade
+        }));
     }
 
     //DELETE
-    excluir(id) {
+    static excluir(id) {
         localStorage.removeItem(id);
     }
 }
