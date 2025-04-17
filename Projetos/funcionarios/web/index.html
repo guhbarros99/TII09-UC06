@@ -11,27 +11,22 @@
             margin: 0 auto;
             padding: 20px;
         }
-
         section {
             margin-bottom: 30px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-
         label {
             display: block;
             margin-bottom: 10px;
         }
-
-        input,
-        select {
+        input, select {
             padding: 8px;
             margin-top: 5px;
             width: 100%;
             box-sizing: border-box;
         }
-
         button {
             padding: 10px 15px;
             background-color: #4CAF50;
@@ -40,11 +35,9 @@
             border-radius: 4px;
             cursor: pointer;
         }
-
         button:hover {
             background-color: #45a049;
         }
-
         #resultado {
             padding: 10px;
             background-color: #f8f8f8;
@@ -53,10 +46,10 @@
     </style>
 </head>
 <body>
-    <!--Implementar a página-->
-    <h1>Sistema de Funcionários</h1>
+   <!--Implementar a página-->
+   <h1>Sistema de Funcionários</h1>
 
-    <section>
+   <section>
         <h2>Cadastro</h2>
 
         <form id="formCadastro">
@@ -80,15 +73,15 @@
                 <select id="tipoFuncionario">
                     <option value="gerente">Gerente</option>
                     <option value="operador">Operador de Caixa</option>
-                    <option value="gerente">Estagiário</option>
+                    <option value="estagiario">Estagiário</option>
                 </select>
             </label>
 
             <button type="button" id="btnCadastrar">Cadastrar</button>
         </form>
         <hr>
-    </section>
+   </section>
 
-    <script type="module" src="script.js"></script>
+   <script type="module" src="script.js"></script>
 </body>
 </html>

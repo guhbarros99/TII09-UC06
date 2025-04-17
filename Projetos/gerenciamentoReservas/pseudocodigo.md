@@ -1,12 +1,12 @@
 INICIAR lista de reservas com array vazio
 
-FUNÇÃO adicionarReservas(nome, data)
-    Criar odjeto "reserva" com nome e data
+FUNÇÃO adicionarReserva(nome, data)
+    Criar objeto "reserva" com nome e data
     Adicionar objeto ao array de reservas
     Atualizar exibicao na tela
 
-FUNÇÃO removerReserva (index)
-    Remover reserva no indice informado
+FUNÇÃO removerReserva(index)
+    Remover reserva no índice informado
     Atualizar exibicao na tela
 
 FUNÇÃO atualizarListaReservas()
@@ -14,4 +14,4 @@ FUNÇÃO atualizarListaReservas()
     Para cada reserva na lista:
         Criar um item visual para exibição
         Criar botão de remoção para cada reserva
-        E0xibir na tela
+        Exibir na tela
