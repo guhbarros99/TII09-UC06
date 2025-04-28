@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Livros</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <h1>Livros Cadastrados</h1>
+  <ul id="listaLivros">
+  </ul>
+  <a href="index.html">← Voltar</a>
+  <script type="module">
+    import { Autor } from './Autor.js';
+    import { BancoDeDados } from './BancoDeDados.js';
+    import { Livro } from './Livro.js';
+    
+    document.getElementById('formCliente').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nome = document.getElementById('autor').value;
+        
+        try {
+            const autor = new Autor(autor);
+            BancoDeDados.salvarCliente(livro);
+            alert('Cliente cadastrado com sucesso!');
+            window.location.href = 'lista_cliente.html';
+        } catch (error) {
+            alert(error.message);
+        }
+    });
+</script>
+</body>
+</html>
